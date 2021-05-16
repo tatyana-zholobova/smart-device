@@ -1,0 +1,127 @@
+.about-company {
+  color: $dark-text;
+}
+
+.about-company__wrapper {
+  position: relative;
+  padding-left: 178px;
+  padding-bottom: 13px;
+
+  &::before {
+    @include pseudo;
+    width: 220px;
+    height: 317px;
+    left: -22px;
+    top: 2px;
+    background-image: url("../img/2005.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/2005@2x.png");
+    }
+  }
+}
+
+.about-company h2 {
+  @include reset;
+  font-family: $font-family-title;
+  font-size: 36px;
+  line-height: 51px;
+  font-weight: normal;
+}
+
+.about-company p {
+  @include reset;
+  padding-right: 5px;
+  margin-top: 19px;
+  font-family: $font-family-content;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.about-company__link {
+  display: inline-block;
+  padding: 14px 45px 14px 45px;
+  min-width: 180px;
+  box-sizing: border-box;
+  margin-top: 41px;
+  color: $accent-blue;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 1px solid $accent-blue;
+  border-radius: 5px;
+}
+
+.about-company__link:hover,
+.about-company__link:focus {
+  background-color: $accent-blue;
+  color: $basic-white;
+}
+
+.about-company__link:active {
+  opacity: 0.8;
+}
+
+@media (max-width: $desktop-width) {
+  .about-company__wrapper {
+    padding-left: 187px;
+    padding-bottom: 7px;
+
+    &::before {
+      height: 362px;
+      width: 251px;
+      top: 0;
+      left: -24px;
+    }
+  }
+
+  .about-company h2 {
+    font-size: 32px;
+    line-height: 45px;
+  }
+
+  .about-company p {
+    padding-right: 0;
+    margin-top: 23px;
+  }
+
+  .about-company__link {
+    margin-top: 40px;
+  }
+
+  .about-company span {
+    display: none;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .about-company h2 {
+    font-size: 28px;
+    line-height: 39px;
+  }
+
+  .about-company__wrapper {
+    max-width: 550px;
+    margin: 0 auto;
+    padding-left: 0;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .about-company p {
+    margin-top: 20px;
+    padding-bottom: 19px;
+  }
+
+  .about-company__link {
+    margin-top: 10px;
+  }
+}

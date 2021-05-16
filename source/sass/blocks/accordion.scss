@@ -1,0 +1,61 @@
+.accordion button {
+  position: relative;
+  display: block;
+  padding-right: 0;
+  padding-left: 0;
+  color: inherit;
+  font: inherit;
+  text-transform: inherit;
+  background-color: transparent;
+  border: none;
+}
+
+@media (max-width: $tablet-width) {
+  .accordion button {
+    &::before {
+      @include pseudo;
+      width: 16px;
+      height: 1px;
+      right: 1px;
+      top: 36px;
+      background-color: #c4c4c4;
+    }
+
+    &::after {
+      @include pseudo;
+      width: 1px;
+      height: 16px;
+      right: 9px;
+      top: 29px;
+      background-color: #c4c4c4;
+    }
+  }
+
+  .accordion--nojs button {
+    &::before {
+      display: none;
+    }
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .accordion__item--active button {
+    &::after {
+      display: none;
+    }
+  }
+
+  .accordion__item .accordion__content {
+    display: none;
+  }
+
+  .accordion__item--active .accordion__content {
+    display: flex;
+  }
+
+  .accordion--nojs .accordion__content {
+    display: flex;
+  }
+}

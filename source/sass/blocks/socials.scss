@@ -1,0 +1,35 @@
+.socials {
+  @include reset-list;
+  display: flex;
+}
+
+.socials__item {
+  margin-right: 16px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.socials__link svg {
+  fill: $icon-inactive;
+
+  &:active {
+    opacity: 0.7;
+  }
+}
+
+.socials__link--facebook:hover svg,
+.socials__link--facebook:focus svg {
+  fill: $icon-facebook;
+}
+
+.socials__link--ok:hover svg,
+.socials__link--ok:focus svg {
+  fill: $icon-ok;
+}
+
+.socials__link--vkontakte:hover svg,
+.socials__link--vkontakte:focus svg {
+  fill: $icon-vkontakte;
+}

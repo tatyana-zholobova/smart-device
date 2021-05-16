@@ -1,0 +1,112 @@
+.modal {
+  display: none;
+
+  &--open {
+    display: block;
+
+    &::before {
+      @include pseudo;
+      z-index: 5;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      background-color: $basic-black;
+      opacity: 0.5;
+    }
+  }
+}
+
+.modal__content {
+  position: fixed;
+  display: none;
+  top: 136px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+  width: 490px;
+  padding: 44px 39px 36px;
+  min-height: 605px;
+  box-sizing: border-box;
+  color: $basic-white;
+  background-color: $accent-blue;
+}
+
+.modal--open .modal__content {
+  display: block;
+}
+
+.modal h2 {
+  @include reset;
+  margin-bottom: 27px;
+  font-family: $font-family-title;
+  font-size: 28px;
+  line-height: 39%;
+  font-weight: normal;
+}
+
+.modal p {
+  @include reset;
+  padding-right: 10px;
+  margin-bottom: 30px;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.modal input {
+  padding: 14px 24px;
+  height: 52px;
+  margin-bottom: 30px;
+}
+
+.modal textarea {
+  padding: 14px 24px;
+  height: 104px;
+  margin-bottom: 32px;
+}
+
+.modal button {
+  width: 100%;
+  margin-bottom: 32px;
+}
+
+.modal .modal__close {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 15px;
+  right: 15px;
+  background-color: transparent;
+  border: none;
+
+  &::before {
+    @include pseudo;
+    top: 11px;
+    right: 2px;
+    background: $basic-white;
+    border-radius: 5px;
+    width: 23px;
+    height: 1px;
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    @include pseudo;
+    top: 11px;
+    right: 2px;
+    background: $basic-white;
+    border-radius: 5px;
+    width: 23px;
+    height: 1px;
+    transform: rotate(-45deg);
+  }
+}
+
+.modal .form__label {
+  &--checkbox {
+    display: block;
+    padding-left: 51px;
+  }
+}

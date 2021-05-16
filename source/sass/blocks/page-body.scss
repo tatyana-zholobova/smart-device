@@ -1,0 +1,50 @@
+.page-body {
+  @include reset;
+  position: relative;
+  min-height: 100%;
+  min-width: 320px;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+  font-family: $font-family-content;
+
+  &--overlay {
+    overflow: hidden;
+  }
+}
+
+.page-body__inner {
+  padding-top: 112px;
+  padding-bottom: 96px;
+  background-image: url("../img/background-features.svg");
+  background-position: top -26px right -30px;
+  background-repeat: no-repeat;
+}
+
+.page-body__features {
+  margin-bottom: 106px;
+}
+
+@media (max-width: $desktop-width) {
+  .page-body__inner {
+    padding-top: 54px;
+    padding-bottom: 76px;
+    background-position: top -85px right -830px;
+  }
+
+  .page-body__features {
+    margin-bottom: 55px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .page-body__inner {
+    padding-top: 37px;
+    padding-bottom: 57px;
+    background-position: top 475px right -950px;
+  }
+
+  .page-body__features {
+    margin-bottom: 55px;
+  }
+}

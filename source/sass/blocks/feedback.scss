@@ -1,0 +1,193 @@
+.feedback {
+  position: relative;
+  padding-top: 93px;
+  padding-bottom: 113px;
+  background-color: $accent-blue;
+  color: $basic-white;
+  background-image: url("../img/background-feedback.svg");
+  background-repeat: no-repeat;
+  background-position: top 35px right -150px;
+}
+
+.feedback__form {
+  width: 570px;
+}
+
+.feedback__wrapper {
+  position: relative;
+  width: 570px;
+  margin-left: auto;
+
+  &::before {
+    @include pseudo;
+    right: 684px;
+    top: -152px;
+    width: 686px;
+    height: 641px;
+    background-image: url("../img/plane.png");
+    background-repeat: no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/plane@2x.png");
+    }
+  }
+}
+
+.feedback__input-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.feedback__box {
+  width: 270px;
+  height: 50px;
+}
+
+.feedback input {
+  padding: 12px 16px;
+  height: 100%;
+}
+
+.feedback textarea {
+  padding: 12px 16px;
+  margin-bottom: 43px;
+  height: 154px;
+}
+
+.feedback__inner {
+  display: flex;
+  align-items: center;
+}
+
+.feedback h2 {
+  @include reset;
+  margin-left: -4px;
+  margin-bottom: 10px;
+  font-family: $font-family-title;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 51px;
+}
+
+.feedback p {
+  @include reset;
+  margin-bottom: 50px;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.feedback button {
+  margin-right: 38px;
+}
+
+@media (max-width: $desktop-width) {
+  .feedback {
+    padding-top: 78px;
+    padding-bottom: 103px;
+    background-image: none;
+  }
+
+  .feedback__form {
+    width: 591px;
+  }
+
+  .feedback h2 {
+    margin-bottom: 17px;
+    font-size: 32px;
+    line-height: 45px;
+  }
+
+  .feedback p {
+    margin-bottom: 54px;
+  }
+
+  .feedback__wrapper {
+    width: 591px;
+    padding-left: 5px;
+    margin-left: auto;
+    margin-right: auto;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .feedback__input-wrapper {
+    margin-bottom: 41px;
+  }
+
+  .feedback__box {
+    width: 279px;
+    height: 52px;
+  }
+
+  .feedback textarea {
+    margin-bottom: 47px;
+    height: 160px;
+  }
+
+  .feedback button {
+    margin-right: 40px;
+    min-width: 280px;
+  }
+}
+
+
+@media (max-width: $tablet-width) {
+  .feedback {
+    padding-top: 29px;
+    padding-bottom: 42px;
+  }
+
+  .feedback__form {
+    width: auto;
+  }
+
+  .feedback__wrapper {
+    padding: 0;
+    width: auto;
+    max-width: 550px;
+  }
+
+  .feedback h2 {
+    margin-bottom: 15px;
+    padding-left: 3px;
+    font-size: 28px;
+    line-height: 39px;
+  }
+
+  .feedback p {
+    margin-bottom: 23px;
+  }
+
+  .feedback__input-wrapper {
+    flex-direction: column;
+    margin-bottom: 31px;
+  }
+
+  .feedback textarea {
+    height: 104px;
+    margin-bottom: 31px;
+  }
+
+  .feedback__box--name {
+    margin-bottom: 30px;
+  }
+
+  .feedback__inner {
+    flex-direction: column;
+  }
+
+  .feedback__box {
+    width: auto;
+  }
+
+  .feedback button {
+    margin-right: 0;
+    margin-bottom: 29px;
+    min-width: 290px;
+    max-width: 350px;
+    width: 100%;
+  }
+}

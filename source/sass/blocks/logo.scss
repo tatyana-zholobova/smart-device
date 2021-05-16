@@ -1,0 +1,17 @@
+.logo {
+  display: flex;
+  align-items: flex-end;
+  padding-left: 4px;
+}
+
+.logo__image {
+  margin-right: 14px;
+}
+
+@media (max-width: $desktop-width) {
+  .logo {
+    display: flex;
+    align-items: flex-end;
+    padding-left: 0;
+  }
+}

@@ -1,0 +1,160 @@
+.services {
+  padding-top: 87px;
+  padding-bottom: 127px;
+  color: $basic-white;
+  font-family: $font-family-title;
+  background-color: $accent-dark;
+}
+
+.services h2 {
+  @include reset;
+  margin-bottom: 52px;
+  font-size: 36px;
+  line-height: 51px;
+  font-weight: normal;
+}
+
+.services__list {
+  @include reset-list;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  justify-content: center;
+}
+
+.services__item {
+  max-width: 370px;
+  max-height: 620px;
+}
+
+.services__link {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: inherit;
+
+  &::before {
+    @include pseudo;
+    z-index: 1;
+    width: 63px;
+    height: 63px;
+    box-sizing: border-box;
+    right: 0;
+    bottom: 0;
+    background-color: $accent-blue;
+    border: 2px solid $accent-blue;
+  }
+}
+
+.services__link:hover,
+.services__link:focus,
+.services__link:active {
+  &::before {
+    background-color: $basic-white;
+  }
+}
+
+.services__link h3 {
+  @include reset;
+  position: absolute;
+  z-index: 1;
+  width: 170px;
+  top: 52px;
+  left: 44px;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: normal;
+}
+
+.services__link img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: saturate(0);
+  opacity: 0.2;
+}
+
+.services__link:hover img {
+  filter: saturate(100%);
+  opacity: 0.5;
+}
+
+.services__link svg {
+  position: absolute;
+  z-index: 1;
+  right: 27px;
+  bottom: 28px;
+  fill: transparent;
+  stroke: $basic-white;
+}
+
+.services__link:hover svg,
+.services__link:focus svg,
+.services__link:active svg {
+  stroke: $accent-blue;
+}
+
+@media (max-width: $desktop-width) {
+  .services {
+    padding-top: 48px;
+    padding-bottom: 78px;
+  }
+
+  .services__list {
+    grid-template-columns: 1fr;
+    gap: 46px;
+  }
+
+  .services h2 {
+    font-size: 32px;
+    line-height: 45px;
+  }
+
+  .services__item {
+    max-width: 100%;
+    max-height: auto;
+    height: 256px;
+  }
+
+  .services__link h3 {
+    top: 41px;
+  }
+
+  .services__link--accessories h3 {
+    top: 51px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .services {
+    padding-bottom: 64px;
+  }
+
+  .services h2 {
+    margin-bottom: 44px;
+    padding-left: 10px;
+    font-size: 28px;
+    line-height: 39px;
+  }
+
+  .services__list {
+    gap: 30px;
+  }
+
+  .services__item {
+    max-height: 256px;
+  }
+
+  .services__link h3 {
+    top: 21px;
+    left: 35px;
+  }
+
+  .services__link--accessories h3 {
+    top: 31px;
+  }
+}

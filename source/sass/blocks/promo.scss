@@ -1,0 +1,227 @@
+.promo {
+  padding-top: 116px;
+  min-height: 878px;
+  box-sizing: border-box;
+  color: $basic-white;
+  background: $accent-dark url("../img/background-promo.png");
+  background-size: cover;
+  background-blend-mode: luminosity;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+}
+
+.promo__wrapper {
+  position: relative;
+  max-width: 720px;
+  min-width: 600px;
+  padding-bottom: 275px;
+  padding-top: 199px;
+  padding-right: 600px;
+
+  &::before {
+    @include pseudo;
+    width: 713px;
+    height: 651px;
+    top: 3px;
+    right: -172px;
+    background-image: url("../img/printed-circuit-board.png");
+    background-repeat: no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/printed-circuit-board@2x.png");
+    }
+  }
+}
+
+.promo h2 {
+  @include reset;
+  margin-bottom: 28px;
+  font-size: 80px;
+  line-height: 94px;
+  letter-spacing: 0.07em;
+  font-family: $font-family-title;
+  text-transform: uppercase;
+}
+
+.promo__content {
+  position: relative;
+  padding-left: 98px;
+
+  &::before {
+    @include pseudo;
+    width: 66px;
+    height: 2px;
+    background-color: $basic-white;
+    top: 15px;
+    left: 3px;
+  }
+}
+
+.promo p {
+  @include reset;
+  margin-bottom: 42px;
+  font-size: 22px;
+  line-height: 34px;
+}
+
+.promo__link {
+  display: inline-block;
+  padding: 17px 44px;
+  color: inherit;
+  font-family: $font-family-title;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.05em;
+  background-color: $accent-blue;
+  border-radius: 5px;
+  border: 1px solid $accent-blue;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $accent-blue;
+    background-color: $basic-white;
+  }
+
+  &--mobile {
+    display: none;
+  }
+}
+
+.promo__scroll {
+  position: absolute;
+  left: -36px;
+  bottom: 125px;
+  font-size: 14px;
+  line-height: 16px;
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.5;
+  transform: rotate(-90deg);
+
+  &:hover,
+  &:focus {
+    opacity: 1;
+  }
+
+  &:active {
+    color: $accent-blue;
+  }
+}
+
+@media (max-width: $desktop-width) {
+  .promo {
+    min-height: 686px;
+  }
+
+  .promo__wrapper {
+    padding-left: 64px;
+    padding-top: 71px;
+    padding-bottom: 100px;
+    padding-right: 500px;
+    min-width: 450px;
+
+    &::before {
+      width: 535px;
+      height: 506px;
+      top: -156px;
+      right: 64px;
+      background-image: url("../img/printed-circuit-board-tablet.png");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/printed-circuit-board-tablet@2x.png");
+      }
+    }
+  }
+
+  .promo__content {
+    padding-left: 51px;
+
+    &::before {
+      width: 33px;
+      top: 18px;
+      left: 3px;
+    }
+  }
+
+  .promo h2 {
+    width: 350px;
+    font-size: 60px;
+    line-height: 70px;
+    letter-spacing: 0.07em;
+  }
+
+  .promo p {
+    margin-bottom: 57px;
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .promo__scroll {
+    display: none;
+  }
+
+  .promo__link {
+    padding: 17px 30px;
+  }
+}
+
+
+@media (max-width: $tablet-width) {
+  .promo {
+    min-height: 647px;
+  }
+
+  .promo h2 {
+    position: relative;
+    z-index: 1;
+    width: auto;
+    font-size: 40px;
+    line-height: 47px;
+  }
+
+  .promo p {
+    margin-bottom: 41px;
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  .promo__link {
+    margin-left: -51px;
+
+    &--desktop {
+      display: none;
+    }
+
+    &--mobile {
+      display: inline-block;
+    }
+  }
+
+  .promo__wrapper {
+    position: relative;
+    width: auto;
+    max-width: 600px;
+    padding-bottom: 50px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 167px;
+    min-width: auto;
+
+    &::before {
+      width: 631px;
+      height: 483px;
+      top: -165px;
+      right: -353px;
+      background-image: url("../img/printed-circuit-board-mobile.png");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/printed-circuit-board-mobile@2x.png");
+      }
+    }
+  }
+}
