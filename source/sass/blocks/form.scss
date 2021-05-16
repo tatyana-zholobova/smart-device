@@ -93,8 +93,9 @@
 .form__checkbox-wrapper input:focus + .form__label {
   &--checkbox {
     &::before {
-      outline: dotted 1px $basic-white;
-      outline-offset: 4px;
+      outline: thin dotted;
+      outline: 5px auto -webkit-focus-ring-color;
+      outline-offset: -2px;
     }
   }
 }

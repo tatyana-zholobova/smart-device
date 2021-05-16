@@ -26,6 +26,7 @@
     right: -172px;
     background-image: url("../img/printed-circuit-board.png");
     background-repeat: no-repeat;
+    background-size: contain;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/printed-circuit-board@2x.png");
