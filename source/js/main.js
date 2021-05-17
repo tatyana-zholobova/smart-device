@@ -1,3 +1,4 @@
+/* global $:readonly */
 'use strict';
 
 var buttonOpen = document.querySelector('.header__order-button');
@@ -154,6 +155,13 @@ phoneInput.addEventListener('focus', addValue);
 phoneInput.addEventListener('blur', removeValue);
 phoneModal.addEventListener('focus', addValue);
 phoneModal.addEventListener('blur', removeValue);
+
+// Маска
+
+$(document).ready(function () {
+  $('#phone').mask('+7(000)000-00-00');
+  $('#modal-phone').mask('+7(000)000-00-00');
+});
 
 // Валидация номера телефона
 

@@ -29,6 +29,12 @@
       top: 29px;
       background-color: #c4c4c4;
     }
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: $accent-blue;
+    }
   }
 
   .accordion--nojs button {

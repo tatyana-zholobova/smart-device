@@ -104,6 +104,22 @@
   }
 }
 
+.modal .modal__close:hover,
+.modal .modal__close:focus {
+  &::before,
+  &::after {
+    height: 2px;
+  }
+}
+
+.modal .modal__close:active {
+  &::before,
+  &::after {
+    opacity: 0.8;
+  }
+}
+
+
 .modal .form__label {
   &--checkbox {
     display: block;

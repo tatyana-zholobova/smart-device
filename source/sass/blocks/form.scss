@@ -54,7 +54,6 @@
 
 .form__label {
   margin-top: 2px;
-  vertical-align: middle;
   font-size: 14px;
   line-height: 16px;
   color: rgba($color: $basic-white, $alpha: 0.8);
@@ -93,9 +92,8 @@
 .form__checkbox-wrapper input:focus + .form__label {
   &--checkbox {
     &::before {
-      outline: thin dotted;
-      outline: 5px auto -webkit-focus-ring-color;
-      outline-offset: -2px;
+      outline: dotted 1px $basic-white;
+      outline-offset: 4px;
     }
   }
 }
