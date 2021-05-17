@@ -16,6 +16,7 @@ var nameInput = document.querySelector('#name');
 var messageInput = document.querySelector('#question');
 var feedbackForm = document.querySelector('.feedback__form');
 var modalForm = document.querySelector('.modal__form');
+var accordionHeaders = document.querySelectorAll('.accordion__item h2');
 var isStorageSupport = true;
 var nameStorage = '';
 var phoneStorage = '';
@@ -126,6 +127,16 @@ document.addEventListener('DOMContentLoaded', function () {
 // Аккордеон
 
 accordion.classList.remove('accordion--nojs');
+
+if (window.matchMedia('(max-width: 767px)').matches) {
+  accordionHeaders.forEach(function (element) {
+    var accordionToggle = document.createElement('button');
+    accordionToggle.textContent = element.textContent;
+    accordionToggle.setAttribute('type', 'button');
+    element.innerHTML = '';
+    element.appendChild(accordionToggle);
+  });
+}
 
 document.querySelectorAll('.accordion__item button').forEach(function (item) {
   item.addEventListener('click', function () {

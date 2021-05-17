@@ -64,4 +64,9 @@
   .accordion--nojs .accordion__content {
     display: flex;
   }
+
+  .accordion--nojs h2 {
+    padding-top: 29px;
+    padding-bottom: 28px;
+  }
 }
