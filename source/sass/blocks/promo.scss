@@ -118,6 +118,7 @@
 @media (max-width: $desktop-width) {
   .promo {
     min-height: 686px;
+    background: $accent-dark url("../img/background-promo-tablet.png");
   }
 
   .promo__wrapper {
@@ -176,6 +177,7 @@
 @media (max-width: $tablet-width) {
   .promo {
     min-height: 647px;
+    background: $accent-dark url("../img/background-promo-mobile.png");
   }
 
   .promo h2 {

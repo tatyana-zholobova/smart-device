@@ -25,7 +25,7 @@
       <div class="header__contacts-wrapper">
         <ul class="header__contacts-list">
           <li class="header__contacts-item header__contacts-item--email">
-            <a href="mailto:vlad@webref.ru">
+            <a href="mailto:vlad@webref.ru" aria-label="Напишите нам">
               <svg class="header__contacts-icon header__contacts-icon--email" width="25" height="19">
                 <use xlink:href="img/sprite_auto.svg#icon-email"></use>
               </svg>
@@ -33,7 +33,7 @@
             </a>
           </li>
           <li class="header__contacts-item header__contacts-item--phone">
-            <a href="tel:+74950005252">
+            <a href="tel:+74950005252" aria-label="Позвоните нам">
               <svg class="header__contacts-icon header__contacts-icon--phone" width="24" height="24">
                 <use xlink:href="img/sprite_auto.svg#icon-phone"></use>
               </svg>
@@ -139,7 +139,7 @@
                 <source type="image/webp" srcset="img/production.webp 1x, img/production@2x.webp 2x">
                 <!-- 1х: width: 370px height: 620px; 2x: width: 740px height: 1240px -->
                 <img src="img/production.jpg" srcset="img/production@2x.jpg 2x"
-                  alt="Оборудование для производства печатных плат" width="370" height="620">
+                  alt="Оборудование для производства печатных плат" width="370" height="620" loading="lazy">
               </picture>
               <svg width="6" height="9">
                 <use xlink:href="img/sprite_auto.svg#icon-arrow"></use>
@@ -160,7 +160,7 @@
                 <source type="image/webp" srcset="img/assembly.webp 1x, img/assembly@2x.webp 2x">
                 <!-- 1х: width: 370px height: 620px; 2x: width: 740px height: 1240px -->
                 <img src="img/assembly.jpg" srcset="img/assembly@2x.jpg 2x" alt="Процесс монтаже печатных плат"
-                  width="370" height="620">
+                  width="370" height="620" loading="lazy">
               </picture>
               <svg width="6" height="9">
                 <use xlink:href="img/sprite_auto.svg#icon-arrow"></use>
@@ -182,7 +182,7 @@
                 <source type="image/webp" srcset="img/accessories.webp 1x, img/accessories@2x.webp 2x">
                 <!-- 1х: width: 370px height: 620px; 2x: width: 740px height: 1240px -->
                 <img src="img/accessories.jpg" srcset="img/accessories@2x.jpg 2x" alt="Светотехника" width="370"
-                  height="620">
+                  height="620" loading="lazy">
               </picture>
               <svg width="6" height="9">
                 <use xlink:href="img/sprite_auto.svg#icon-arrow"></use>
@@ -319,7 +319,7 @@
         <label class="visually-hidden" for="modal-name">Введите Ваше имя</label>
         <input type="text" name="name" id="modal-name" placeholder="Имя" required>
         <label class="visually-hidden" for="modal-phone">Введите Ваш номер телефона</label>
-        <input type="tel" name="phone" id="modal-phone" placeholder="Телефон" pattern="[0-9]{10}" required>
+        <input type="tel" name="phone" id="modal-phone" placeholder="Телефон" minlength="16" maxlength="16" required>
         <label class="visually-hidden" for="modal-question">Задайте нам Ваш вопрос</label>
         <textarea name="question" id="modal-question" placeholder="Ваш вопрос"></textarea>
         <button type="submit">Отправить</button>

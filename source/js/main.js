@@ -75,8 +75,23 @@ if (page.classList.contains('page-body--overlay')) {
   page.addEventListener('click', closeModal());
 }
 
+// Валидация номера телефона
+
+function validatePhone(value) {
+  if (value.target.validity.tooLong || value.target.validity.tooShort) {
+    value.target.setCustomValidity('Введите номер телефона в формате +7(XXX)XXX-XX-XX');
+  } else {
+    value.target.setCustomValidity('');
+  }
+}
+
+phoneInput.addEventListener('invalid', validatePhone);
+phoneModal.addEventListener('invalid', validatePhone);
+
+// localStorage
+
 modalForm.addEventListener('submit', function (evt) {
-  if (!nameModal.value || !phoneModal.value || !messageModal.value) {
+  if (!nameModal.value || !phoneModal.value) {
     evt.preventDefault();
   } else {
     if (isStorageSupport) {
@@ -89,7 +104,7 @@ modalForm.addEventListener('submit', function (evt) {
 
 
 feedbackForm.addEventListener('submit', function (evt) {
-  if (!nameInput.value || !phoneInput.value || !messageInput.value) {
+  if (!nameInput.value || !phoneInput.value) {
     evt.preventDefault();
   } else {
     if (isStorageSupport) {
@@ -173,16 +188,3 @@ $(document).ready(function () {
   $('#phone').mask('+7(000)000-00-00');
   $('#modal-phone').mask('+7(000)000-00-00');
 });
-
-// Валидация номера телефона
-
-function validatePhone(value) {
-  if (value.target.validity.tooLong || value.target.validity.tooShort) {
-    value.target.setCustomValidity('Введите номер телефона в формате +7(XXX)XXX-XX-XX');
-  } else {
-    value.target.setCustomValidity('');
-  }
-}
-
-phoneInput.addEventListener('invalid', validatePhone);
-phoneModal.addEventListener('invalid', validatePhone);
