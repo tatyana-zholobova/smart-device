@@ -1,12 +1,8 @@
 .navigation__list {
   @include reset-list;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  align-content: flex-start;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-  height: 100px;
+  column-count: 2;
+  column-width: 250px;
+  column-gap: 55px;
 }
 
 .navigation__list a {
@@ -14,17 +10,13 @@
   line-height: 25px;
 }
 
-.navigation__item {
-  display: flex;
-  align-items: flex-start;
-  padding-right: 38px;
-  padding-left: 34px;
-  box-sizing: border-box;
-}
-
 @media (max-width: $desktop-width) {
   .navigation__list {
-    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: flex-start;
   }
 
   .navigation__item {

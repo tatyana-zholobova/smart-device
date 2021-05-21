@@ -39,7 +39,7 @@
   flex-wrap: wrap;
 }
 
-.header__contacts-item {
+.header__contacts-item + .header__contacts-item {
   margin-left: 68px;
 }
 
@@ -116,10 +116,8 @@ a .header__contacts-icon {
     align-items: center;
   }
 
-  .header__contacts-item {
-    &--phone {
-      margin-left: 13px;
-    }
+  .header__contacts-item + .header__contacts-item {
+    margin-left: 13px;
   }
 
   .header__contacts-wrapper {
@@ -161,10 +159,8 @@ a .header__contacts-icon {
     margin-top: -10px;
   }
 
-  .header__contacts-item {
-    &--phone {
-      margin-left: 4px;
-    }
+  .header__contacts-item + .header__contacts-item {
+    margin-left: 4px;
   }
 
   .header__logo-text {

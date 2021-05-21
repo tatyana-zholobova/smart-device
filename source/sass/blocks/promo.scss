@@ -117,14 +117,14 @@
 
 @media (max-width: $desktop-width) {
   .promo {
-    min-height: 686px;
+    min-height: 685px;
     background: $accent-dark url("../img/background-promo-tablet.png");
   }
 
   .promo__wrapper {
     padding-left: 64px;
     padding-top: 71px;
-    padding-bottom: 100px;
+    padding-bottom: 99px;
     padding-right: 500px;
     min-width: 450px;
 
@@ -189,14 +189,15 @@
   }
 
   .promo p {
-    margin-bottom: 41px;
+    margin-bottom: 40px;
     font-size: 16px;
     line-height: 25px;
   }
 
   .promo__link {
     padding: 17px 33px;
-    margin-left: -51px;
+    margin-left: -50px;
+    width: auto;
 
     &--desktop {
       display: none;
@@ -214,19 +215,25 @@
     padding-bottom: 50px;
     padding-left: 0;
     padding-right: 0;
-    padding-top: 167px;
+    padding-top: 169px;
     min-width: auto;
 
     &::before {
       width: 631px;
       height: 483px;
-      top: -165px;
+      top: -163px;
       right: -353px;
       background-image: url("../img/printed-circuit-board-mobile.png");
 
       @media (min-resolution: 2dppx) {
         background-image: url("../img/printed-circuit-board-mobile@2x.png");
       }
+    }
+  }
+
+  .promo__content {
+    &::before {
+      top: 15px;
     }
   }
 }

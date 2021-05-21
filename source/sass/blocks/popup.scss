@@ -1,0 +1,66 @@
+.popup {
+  padding-top: 100px;
+  padding-bottom: 20px;
+  background-color: $accent-dark;
+}
+
+.popup__content {
+  width: 490px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 44px 39px 36px;
+  min-height: 605px;
+  box-sizing: border-box;
+  color: $basic-white;
+  background-color: $accent-blue;
+}
+
+.popup h2 {
+  @include reset;
+  margin-bottom: 27px;
+  font-family: $font-family-title;
+  font-size: 28px;
+  line-height: 39%;
+  font-weight: normal;
+}
+
+.popup p {
+  @include reset;
+  padding-right: 10px;
+  margin-bottom: 30px;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.popup input {
+  padding: 14px 24px;
+  height: 52px;
+  margin-bottom: 30px;
+}
+
+.popup textarea {
+  padding: 14px 24px;
+  height: 104px;
+  margin-bottom: 32px;
+}
+
+.popup button {
+  width: 100%;
+  margin-bottom: 32px;
+}
+
+.popup .form__label {
+  &--checkbox {
+    display: block;
+    padding-left: 51px;
+  }
+}
+
+@media (max-width: $desktop-width) {
+  .popup__content {
+    width: auto;
+    max-width: 500px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}

@@ -7,6 +7,7 @@
   color: $basic-white;
   background-color: $input-background;
   border: none;
+  border-radius: 0;
 
   &::placeholder {
     color: $basic-white;
@@ -17,6 +18,10 @@
 .form input:hover::placeholder,
 .form textarea:hover::placeholder {
   color: $accent-blue;
+}
+
+.form textarea {
+  resize: none;
 }
 
 .form input:hover,

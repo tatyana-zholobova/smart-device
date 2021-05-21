@@ -1,6 +1,6 @@
 .services {
   padding-top: 87px;
-  padding-bottom: 127px;
+  padding-bottom: 129px;
   color: $basic-white;
   font-family: $font-family-title;
   background-color: $accent-dark;
@@ -100,8 +100,8 @@
 
 @media (max-width: $desktop-width) {
   .services {
-    padding-top: 48px;
-    padding-bottom: 77px;
+    padding-top: 49px;
+    padding-bottom: 76px;
   }
 
   .services__list {
@@ -132,7 +132,7 @@
 @media (max-width: $tablet-width) {
   .services {
     padding-top: 49px;
-    padding-bottom: 64px;
+    padding-bottom: 63px;
   }
 
   .services h2 {

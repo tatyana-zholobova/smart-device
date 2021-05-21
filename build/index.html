@@ -23,7 +23,7 @@
       <div class="header__contacts-wrapper">
         <ul class="header__contacts-list">
           <li class="header__contacts-item header__contacts-item--email">
-            <a href="mailto:vlad@webref.ru" aria-label="Напишите нам">
+            <a href="mailto:info@sd.ru" aria-label="Напишите нам" tabindex="1">
               <svg class="header__contacts-icon header__contacts-icon--email" width="25" height="19">
                 <use xlink:href="img/sprite_auto.svg#icon-email"></use>
               </svg>
@@ -31,7 +31,7 @@
             </a>
           </li>
           <li class="header__contacts-item header__contacts-item--phone">
-            <a href="tel:+74950005252" aria-label="Позвоните нам">
+            <a href="tel:+74950005252" aria-label="Позвоните нам" tabindex="1">
               <svg class="header__contacts-icon header__contacts-icon--phone" width="24" height="24">
                 <use xlink:href="img/sprite_auto.svg#icon-phone"></use>
               </svg>
@@ -39,7 +39,7 @@
             </a>
           </li>
         </ul>
-        <a href="#" class="header__order-button">Заказать звонок</a>
+        <a href="popup.html" class="header__order-button header__order-button--no-js" tabindex="1">Заказать звонок</a>
       </div>
     </div>
   </header>
@@ -53,10 +53,11 @@
             <p>
               производство и монтаж, поставка комплектующих, блоков и модулей
             </p>
-            <a href="#feedback" class="promo__link promo__link--desktop">Получить бесплатную консультацию</a>
-            <a href="#feedback" class="promo__link promo__link--mobile">Бесплатная консультация</a>
+            <a href="#feedback" class="promo__link promo__link--desktop" tabindex="1">Получить бесплатную
+              консультацию</a>
+            <a href="#feedback" class="promo__link promo__link--mobile" tabindex="1">Бесплатная консультация</a>
           </div>
-          <a href="#features" class="promo__scroll">Скролл вниз</a>
+          <a href="#features" class="promo__scroll" tabindex="1">Скролл вниз</a>
         </div>
       </div>
     </section>
@@ -114,7 +115,7 @@
               Дорог <span>(РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов
                 крупнейшие Производители светотехники России</span>.
             </p>
-            <a href="#" class="about-company__link">Подробнее</a>
+            <a href="#" class="about-company__link" tabindex="1">Подробнее</a>
           </div>
         </div>
       </section>
@@ -124,7 +125,7 @@
         <h2 class="">Service Device предлагает следующие товары и&#160;услуги</h2>
         <ul class="services__list">
           <li class="services__item">
-            <a href="#" class="services__link services__link--production">
+            <a href="#" class="services__link services__link--production" tabindex="1">
               <h3>Производство печатных плат</h3>
               <picture>
                 <!-- 1х: width: 290px height: 256px; 2x: width: 580px height: 512px -->
@@ -142,7 +143,7 @@
             </a>
           </li>
           <li class="services__item">
-            <a href="#" class="services__link services__link--assembly">
+            <a href="#" class="services__link services__link--assembly" tabindex="1">
               <h3>Монтаж печатных плат</h3>
               <picture>
                 <!-- 1х: width: 290px height: 256px; 2x: width: 580px height: 512px -->
@@ -161,7 +162,7 @@
             </a>
           </li>
           <li class="services__item">
-            <a href="#" class="services__link services__link--accessories">
+            <a href="#" class="services__link services__link--accessories" tabindex="1">
               <h3>Комплектующие для светотехники</h3>
               <picture>
                 <!-- 1х: width: 290px height: 256px; 2x: width: 580px height: 512px -->
@@ -190,19 +191,20 @@
             <div class="feedback__input-wrapper">
               <div class="feedback__box feedback__box--name">
                 <label class="visually-hidden" for="name">Введите Ваше имя</label>
-                <input type="text" name="name" id="name" placeholder="Имя" required="">
+                <input type="text" name="name" id="name" placeholder="Имя" required="" tabindex="1">
               </div>
               <div class="feedback__box feedback__box--phone">
                 <label class="visually-hidden" for="phone">Введите Ваш номер телефона</label>
-                <input type="tel" name="phone" id="phone" placeholder="Телефон" minlength="16" maxlength="16" required="">
+                <input type="tel" name="phone" id="phone" placeholder="Телефон" minlength="16" maxlength="16" required="" tabindex="1">
               </div>
             </div>
             <label class="visually-hidden" for="phone">Задайте нам Ваш вопрос</label>
-            <textarea name="question" id="question" cols="30" rows="10" placeholder="Ваш вопрос"></textarea>
+            <textarea name="question" id="question" cols="30" rows="10" placeholder="Ваш вопрос" tabindex="1"></textarea>
             <div class="feedback__inner form__checkbox-wrapper">
-              <button type="submit">Задать вопрос</button>
-              <input class="visually-hidden" type="checkbox" name="consent" id="consent">
-              <label class="form__label form__label--checkbox" for="consent">Я согласен на обработку персональных
+              <button type="submit" tabindex="2">Задать вопрос</button>
+              <input class="visually-hidden" type="checkbox" name="consent" id="consent" required="" tabindex="1">
+              <label class="form__label form__label--checkbox" for="consent">Я согласен на обработку
+                персональных
                 данных</label>
             </div>
           </form>
@@ -220,21 +222,21 @@
         <p class="footer__right-holder footer__right-holder--tablet">1999-2018 SD Service Devices</p>
         <ul class="footer__socials socials">
           <li class="socials__item">
-            <a href="#" class="socials__link socials__link--facebook" aria-label="Перейти на страницу в Facebook">
+            <a href="#" class="socials__link socials__link--facebook" aria-label="Перейти на страницу в Facebook" tabindex="2">
               <svg width="27" height="27">
                 <use xlink:href="img/sprite_auto.svg#icon-facebook"></use>
               </svg>
             </a>
           </li>
           <li class="socials__item">
-            <a href="#" class="socials__link socials__link--ok" aria-label="Перейти на страницу в Одноклассники">
+            <a href="#" class="socials__link socials__link--ok" aria-label="Перейти на страницу в Одноклассники" tabindex="2">
               <svg width="27" height="27">
                 <use xlink:href="img/sprite_auto.svg#icon-ok"></use>
               </svg>
             </a>
           </li>
           <li class="socials__item">
-            <a href="#" class="socials__link socials__link--vkontakte" aria-label="Перейти на страницу в ВКонтакте">
+            <a href="#" class="socials__link socials__link--vkontakte" aria-label="Перейти на страницу в ВКонтакте" tabindex="2">
               <svg width="27" height="27">
                 <use xlink:href="img/sprite_auto.svg#icon-vk"></use>
               </svg>
@@ -250,25 +252,25 @@
           <div class="accordion__content footer__accordion-content">
             <ul class="navigation__list">
               <li class="navigation__item">
-                <a href="#">О компании</a>
+                <a href="#" tabindex="2">О компании</a>
               </li>
               <li class="navigation__item">
-                <a href="#"> Продукты</a>
+                <a href="#" tabindex="2"> Продукты</a>
               </li>
               <li class="navigation__item">
-                <a href="#">Производство печатных плат</a>
+                <a href="#" tabindex="2">Производство печатных плат</a>
               </li>
               <li class="navigation__item">
-                <a href="#">Монтаж печатных плат</a>
+                <a href="#" tabindex="2">Монтаж печатных плат</a>
               </li>
               <li class="navigation__item">
-                <a href="#">Комплектующие</a>
+                <a href="#" tabindex="2">Комплектующие</a>
               </li>
               <li class="navigation__item">
-                <a href="#">Доставка</a>
+                <a href="#" tabindex="2">Доставка</a>
               </li>
               <li class="navigation__item">
-                <a href="#">Контакты</a>
+                <a href="#" tabindex="2">Контакты</a>
               </li>
             </ul>
           </div>
@@ -279,9 +281,9 @@
           </h2>
           <div class="accordion__content contacts__content footer__accordion-content">
             <address>г. Мытищи, Олимпийский проспект, д.10</address>
-            <a href="tel:+74955894050">+7 (495) 589-40-50</a>
-            <a href="tel:+79250038767">+7 (925) 003-87-67</a>
-            <a href="tel:+792692608079">+7 (926) 926-080-79</a>
+            <a href="tel:+74955894050" tabindex="2">+7 (495) 589-40-50</a>
+            <a href="tel:+79250038767" tabindex="2">+7 (925) 003-87-67</a>
+            <a href="tel:+792692608079" tabindex="2">+7 (926) 926-080-79</a>
           </div>
         </section>
       </div>
@@ -292,9 +294,9 @@
         <div class="footer__copyright-box">
           <p class="footer__all-rights">Все права защищены</p>
           <p class="footer__right-holder footer__right-holder--desktop">1999-2018 SD Service Devices</p>
-          <a class="footer__privacy-link" href="#">Условия конфиденциальности</a>
+          <a class="footer__privacy-link" href="#" tabindex="2">Условия конфиденциальности</a>
         </div>
-        <a class="footer__developer-link" href="#">Developed by wow studio</a>
+        <a class="footer__developer-link" href="#" tabindex="2">Developed by wow studio</a>
       </div>
     </div>
   </footer>
@@ -304,19 +306,21 @@
       <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
       <form class="modal__form form" action="https://echo.htmlacademy.ru" method="POST">
         <label class="visually-hidden" for="modal-name">Введите Ваше имя</label>
-        <input type="text" name="name" id="modal-name" placeholder="Имя" required="">
+        <input type="text" name="name" id="modal-name" placeholder="Имя" required="" tabindex="2">
         <label class="visually-hidden" for="modal-phone">Введите Ваш номер телефона</label>
-        <input type="tel" name="phone" id="modal-phone" placeholder="Телефон" minlength="16" maxlength="16" required="">
+        <input type="tel" name="phone" id="modal-phone" placeholder="Телефон" minlength="16" maxlength="16" required="" tabindex="2">
         <label class="visually-hidden" for="modal-question">Задайте нам Ваш вопрос</label>
-        <textarea name="question" id="modal-question" placeholder="Ваш вопрос"></textarea>
-        <button type="submit">Отправить</button>
+        <textarea name="question" id="modal-question" placeholder="Ваш вопрос" tabindex="2"></textarea>
+        <button type="submit" tabindex="3">Отправить</button>
         <div class="form__checkbox-wrapper">
-          <input class="visually-hidden" type="checkbox" name="consent" id="modal-consent">
-          <label class="form__label form__label--checkbox" for="modal-consent">Я согласен на обработку персональных
+          <input class="visually-hidden" type="checkbox" name="consent" id="modal-consent" required="">
+          <label class="form__label form__label--checkbox" for="modal-consent" tabindex="2">Я согласен на
+            обработку
+            персональных
             данных</label>
         </div>
       </form>
-      <button class="modal__close" type="button" aria-label="Закрыть модальное окно"></button>
+      <button class="modal__close" type="button" aria-label="Закрыть модальное окно" tabindex="3"></button>
     </div>
   </section>
   <script src="js/vendor.js"></script>

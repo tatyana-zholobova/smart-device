@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Smart Device</title>
+  <meta name="description" content="Заказать производство, монтаж печатных плат, купить комплектующие для светотехники">
+  <link rel="preload" href="fonts/ptmono.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/robotocondensed.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/robotocondensedbold.woff2" as="font" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body class="page-body">
+  <header class="header">
+    <div class="header__wrapper container container--wide">
+      <a class="header__logo logo" href="index.html" tabindex="1">
+        <img class="header__logo-image logo__image" src="img/logo-image.svg" alt="Логотип Smart Device" width="52" height="52">
+        <img class="header__logo-text logo__text" src="img/logo-text.svg" alt="Логотип Smart Device" width="134" height="45">
+      </a>
+      <div class="header__contacts-wrapper">
+        <ul class="header__contacts-list">
+          <li class="header__contacts-item header__contacts-item--email">
+            <a href="mailto:info@sd.ru" aria-label="Напишите нам" tabindex="1">
+              <svg class="header__contacts-icon header__contacts-icon--email" width="25" height="19">
+                <use xlink:href="img/sprite_auto.svg#icon-email"></use>
+              </svg>
+              <span>info@sd.ru</span>
+            </a>
+          </li>
+          <li class="header__contacts-item header__contacts-item--phone">
+            <a href="tel:+74950005252" aria-label="Позвоните нам" tabindex="1">
+              <svg class="header__contacts-icon header__contacts-icon--phone" width="24" height="24">
+                <use xlink:href="img/sprite_auto.svg#icon-phone"></use>
+              </svg>
+              <span>+7&#160;(495)&#160;000&#160;52&#160;52</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <main class="page-body">
+    <h1 class="visually-hidden">Форма обратной связки</h1>
+    <section class="popup">
+      <div class="container">
+        <div class="popup__content">
+          <h2>Закажите звонок</h2>
+          <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+          <form class="popup__form form" action="https://echo.htmlacademy.ru" method="POST">
+            <label class="visually-hidden" for="modal-name">Введите Ваше имя</label>
+            <input type="text" name="name" id="modal-name" placeholder="Имя" required="" tabindex="1">
+            <label class="visually-hidden" for="modal-phone">Введите Ваш номер телефона</label>
+            <input type="tel" name="phone" id="modal-phone" placeholder="Телефон" minlength="16" maxlength="16" required="" tabindex="1">
+            <label class="visually-hidden" for="modal-question">Задайте нам Ваш вопрос</label>
+            <textarea name="question" id="modal-question" placeholder="Ваш вопрос" tabindex="1"></textarea>
+            <button type="submit" tabindex="2">Отправить</button>
+            <div class="form__checkbox-wrapper">
+              <input class="visually-hidden" type="checkbox" name="consent" id="modal-consent" required="">
+              <label class="form__label form__label--checkbox" for="modal-consent" tabindex="1">Я согласен на
+                обработку персональных данных</label>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__container container container--wide">
+      <div class="footer__inner">
+        <a class="footer__logo logo" href="index.html" tabindex="2">
+          <img class="logo__image" src="img/logo-image.svg" width="52" height="52" alt="Графическая часть логотипа Smart Device">
+          <img class="logo__text" src="img/logo-text-dark.svg" width="148" height="45" alt="Текстовая часть логотипа Smart Device">
+        </a>
+        <p class="footer__right-holder footer__right-holder--tablet">1999-2018 SD Service Devices</p>
+        <ul class="footer__socials socials">
+          <li class="socials__item">
+            <a href="#" class="socials__link socials__link--facebook" aria-label="Перейти на страницу в Facebook" tabindex="2">
+              <svg width="27" height="27">
+                <use xlink:href="img/sprite_auto.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a href="#" class="socials__link socials__link--ok" aria-label="Перейти на страницу в Одноклассники" tabindex="2">
+              <svg width="27" height="27">
+                <use xlink:href="img/sprite_auto.svg#icon-ok"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a href="#" class="socials__link socials__link--vkontakte" aria-label="Перейти на страницу в ВКонтакте" tabindex="2">
+              <svg width="27" height="27">
+                <use xlink:href="img/sprite_auto.svg#icon-vk"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__wrapper accordion accordion--nojs">
+        <nav class="footer__section footer__section--navigation navigation accordion__item">
+          <h2>
+            Разделы сайта
+          </h2>
+          <div class="accordion__content footer__accordion-content">
+            <ul class="navigation__list">
+              <li class="navigation__item">
+                <a href="#" tabindex="2">О компании</a>
+              </li>
+              <li class="navigation__item">
+                <a href="#" tabindex="2"> Продукты</a>
+              </li>
+              <li class="navigation__item">
+                <a href="#" tabindex="2">Производство печатных плат</a>
+              </li>
+              <li class="navigation__item">
+                <a href="#" tabindex="2">Монтаж печатных плат</a>
+              </li>
+              <li class="navigation__item">
+                <a href="#" tabindex="2">Комплектующие</a>
+              </li>
+              <li class="navigation__item">
+                <a href="#" tabindex="2">Доставка</a>
+              </li>
+              <li class="navigation__item">
+                <a href="#" tabindex="2">Контакты</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <section class="footer__section footer__section--contacts contacts accordion__item">
+          <h2>
+            Наш офис
+          </h2>
+          <div class="accordion__content contacts__content footer__accordion-content">
+            <address>г. Мытищи, Олимпийский проспект, д.10</address>
+            <a href="tel:+74955894050" tabindex="2">+7 (495) 589-40-50</a>
+            <a href="tel:+79250038767" tabindex="2">+7 (925) 003-87-67</a>
+            <a href="tel:+792692608079" tabindex="2">+7 (926) 926-080-79</a>
+          </div>
+        </section>
+      </div>
+    </div>
+    <div class="footer__copyright">
+      <div class="footer__copyright-wrapper container container--wide">
+
+        <div class="footer__copyright-box">
+          <p class="footer__all-rights">Все права защищены</p>
+          <p class="footer__right-holder footer__right-holder--desktop">1999-2018 SD Service Devices</p>
+          <a class="footer__privacy-link" href="#" tabindex="2">Условия конфиденциальности</a>
+        </div>
+        <a class="footer__developer-link" href="#" tabindex="2">Developed by wow studio</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/vendor.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
