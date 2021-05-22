@@ -86,6 +86,19 @@
   }
 }
 
+.form__label-box {
+  display: flex;
+  position: relative;
+}
+
+.form__checkbox-wrapper input[type="checkbox"] {
+  width: auto;
+  height: auto;
+  padding: 0;
+  bottom: 0;
+  left: 0;
+}
+
 .form__checkbox-wrapper input:checked + .form__label {
   &--checkbox {
     &::after {
